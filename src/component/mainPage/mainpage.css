@@ -1,0 +1,70 @@
+.mainpagecontainer{
+    z-index: -2;
+}
+.mainpgcontainerinner{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    z-index:0;
+    animation: popup 1s ease-in-out;
+}
+.MainParallax{
+    height: 100vh;
+    width: 100vw;
+    position: absolute !important;
+}
+.bhdg_hds{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bjha_jia{
+    width:60%;
+    height: auto;
+    min-width: 30vw;
+    margin: 12.5vh 0 0 0 ;
+}
+.hbh_ki{
+    margin: 8vh 0 0 0;
+    max-width: 100%;
+    width: 20vw;
+    min-width: 10%;
+    height: auto;
+}
+.hbh_ki>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+  @keyframes popup {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .bjha_jia{
+        width: 80%;
+    }
+    .hbh_ki{
+        width: 50vw;
+    }
+}

@@ -1,0 +1,32 @@
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    height: 100%;
+    width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 10px 10px #0000005e;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+  border-radius: 15px;
+  filter: grayscale(1);
+  transition: 0.4s;
+  cursor: pointer;
+  position: relative;
+}
+
+.container:hover > img {
+  filter: grayscale(0);
+}

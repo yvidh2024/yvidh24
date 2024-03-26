@@ -1,0 +1,141 @@
+
+.AboutParallax{
+    width: 100vw;
+    height: 100vh;
+    position: absolute !important;
+}
+.react-parallax.AboutParallax{
+    position: absolute !important;
+}
+.aboutContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.aboutContainer>.about{
+    width: 50%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.aboutyvidhinner{
+    display: flex;
+    height: 25vh;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutyvidhinner,.mainyvidhimg{
+    height: 100%;
+    
+}
+.aboutyvidh{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yvidhimg{
+    height: 100%;
+}
+.aboutyvidhinner .stcetimg{
+    width: 100%;
+}
+.aboutContainer>.aboutyvidh{
+    height: 100%;
+    width: 50%;
+    padding: 2vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+.about>.aboutheading{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.about>.aboutheading>h1{
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+}
+.mainstcetimg{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.about>.aboutcontent{
+    text-align: center;
+    color: white;
+    height: 60%;
+    max-width: 80%;
+    padding: 1vw;
+}
+.anta-regular {
+    font-size: 1.5vw;
+    font-family: "Anta", sans-serif;
+    font-style: normal;
+    /* line-height: 100%; */
+    height: 100%;
+    word-wrap: break-word;
+  }
+
+
+
+ @media only screen and (max-width: 1459px){ 
+    .aboutContainer{
+        flex-direction: column;
+    }
+    .aboutyvidh,.about{
+        min-width: 100%;
+    }
+    .aboutContainer>.aboutyvidh,.aboutContainer>.about {
+        width: 100%;
+        height: 50%;
+    }
+    .aboutyvidhinner{
+        height: 100%;
+    }
+  } 
+
+  @media only screen and (max-width: 1100px){
+    /* .anta-regular{
+        font-size: 3vw;
+    } */
+    .aboutContainer>.aboutyvidh{
+        height: 40%;
+    }
+    .aboutContainer>.about{
+        justify-content: flex-start;
+        height: 50%;
+    }
+    .about>.aboutcontent{
+        height: 80%;
+    }
+    
+  }
+  @media only screen and (max-width:680px) {
+    .anta-regular>h4{
+        font-size: 3.5vw;
+    }
+    .aboutContainer{
+        justify-content: flex-start;
+    }
+  }
+  @media only screen and (max-width:500px){
+    .aboutyvidhinner{
+        height: 90%;
+        justify-content: space-between;
+    }
+    .anta-regular>h4{
+        font-size: 4.4vw;
+    }
+    .about>.aboutheading{
+        height: 10%;
+    }
+  }

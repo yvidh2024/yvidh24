@@ -1,0 +1,256 @@
+.faqmaincontainer{
+    z-index: -2;
+
+}
+.faqcontainer{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+    z-index:0;
+}
+.faqmain{
+  width: 100%;
+  height: 100%;
+}
+.FaqParallax{
+  height: 100vh;
+  width: 100vw;
+  position: absolute !important;
+}
+.faqinnercontainer{
+  width: 100%;
+  min-height: 77%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+}
+.footercontainer{
+  width: 100%;
+  height: 16%;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footercontent{
+  width: 95%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footercontent h5{
+  color: white;
+}
+.fleft{
+  width: 20%;
+  height: 100%;
+  display: flex;
+}
+.fleftinner{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  width: 100%;
+}
+
+.flefta {
+  text-decoration: none; 
+  color: white;
+  font-size: 100%;
+  
+}
+.fcenter{
+  width: 40%;
+  height: 100%;
+}
+.fright{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.frightinner{
+  width: 30%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.frightinner a img{
+  height: 90%;
+  width: auto;
+}
+.fcenterinner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fcenterimg>img{
+  height: 90%;
+  width: auto;
+}
+.fcenterimg{
+  height: 50%;
+}
+.fcenterinner h5{
+  flex: 1;
+}
+.faqcontent{
+  width: 87%;
+  min-height: 80%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0.5vh;
+}
+.faqheading{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+.faqheading>div{
+  margin-right:22px;
+}
+.faqheading>div>h1{
+  font-size: 3vw;
+}
+.faqmaincontent{
+  width: 100%;
+  max-height: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.441);
+  border-radius: 15px;
+}
+
+.faqs {
+  width: 97%;
+  min-height: 95%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.faqs .faq {
+  margin: 15px;
+  padding: 15px;
+  background: transparent;
+  border-bottom: solid 5px white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.faqs .faq .faq-question {
+  position: relative;
+  font-size: 2vw;
+  color: white;
+  padding-right: 80px;
+  transition: all 0.4s ease;
+}
+
+.faqs .faq .faq-question::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s ease;
+}
+.faq-answer{
+  color: white;
+  font-size: 2vw;
+}
+
+.faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faqs .faq.open .faq-question {
+  margin-bottom: 15px;
+}
+
+.faqs .faq.open .faq-question::after {
+  content: "-";
+}
+
+.faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 920px){
+  .faq-question,.faq-answer,.faqheading h1{
+    font-size: 1.9vh !important;
+  }
+  
+  .fitem{
+    flex: 2;
+  }
+  .fleft {
+    width: auto;
+    height: 25%;
+  }
+  .fright {
+    width: auto;
+    height: 20%;
+  }
+  .frightinner {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .frightinner a{
+    height: 100%;
+  }
+  .fcenter h5{
+    margin: 0;
+    font-size: 0.9vh;
+  }
+  .flefta{
+    font-size: 1.2vh;
+  }
+  .fcenter{
+    height: 60%;
+    width:auto;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

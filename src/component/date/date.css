@@ -1,0 +1,59 @@
+.datemaincontainer1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.datemaincontainer{
+    
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.monthcont{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    animation:slide-in-fwd-center 2.5s linear both;
+}
+.datecont{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cont4{
+ width: 30%;
+ animation:slide-in-left 0.7s linear both;
+}
+.linecont{
+width:10% ;
+
+}
+.cont5{
+width: 30%;
+animation:slide-in-right 0.7s linear both;
+}
+.cont4 > img,
+.linecont > img,
+.cont5 > img,
+.monthcont > img {
+  width: 100%;
+
+}
+
+
+
+@keyframes slide-in-fwd-center{0%{transform:translateZ(-500px);opacity:0}100%{transform:translateZ(0);opacity:1}}
+
+@keyframes slide-in-right{0%{transform:translateX(100px);opacity:0}100%{transform:translateX(0);opacity:1}}
+
+@keyframes slide-in-left{0%{transform:translateX(-100px);opacity:0}100%{transform:translateX(0);opacity:1}}

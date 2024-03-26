@@ -1,0 +1,199 @@
+.mainhomecontainer{
+    z-index: -2;
+}
+.yvidhdateanim{
+    animation: fadeInAnimation 1.5s ease-in-out;
+}
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.homeContainer{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    z-index:0;
+}
+.navbarouter.fixed {
+    position: fixed !important;
+    top: 0  !important;
+    width: 100vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+.react-parallax{
+    overflow: hidden;
+    z-index: 1;
+}
+.HomeParallax{
+    height: 100vh;
+    width: 100vw;
+    position: absolute !important;
+}
+.react-parallax-content{
+    height: 100%;
+}
+.container-fluid{
+    height: 100%;
+}
+.navbar-brand{
+    color:  white !important;
+    height: 100%;
+    width: 30%;
+}
+
+.nav-link { 
+    font-size: larger;
+    padding-right: 50px; 
+    color: white !important;
+}
+.navbar-toggler{
+    border-radius: 3px !important;
+    background-color: rgb(52, 51, 51) !important;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("Nav.png") !important;
+}
+.nav-item{
+    margin:0 40px 0 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.nav-link:hover {
+    background-color: rgba(162, 0, 0, 0.471);
+    border-radius: 10px;
+}
+.navbarouter{
+    top: 0 !important;
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    min-height: 6vh;
+    padding: 1vw;
+    margin:1vh 0 0 0;
+    
+}
+
+.navbar.navbar-expand-lg.navbar-light{
+    width: 94%;
+    height: 100%;
+    height: 100%;
+    border-radius: 3vw;
+    background-color: rgba(128, 128, 128, 0.338);
+}
+.navbar-brands>img{
+    width: 100%;
+    height: 100%;
+}
+.navbar-brands{
+    height: 100%;
+}
+
+
+
+.dateyvidh{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.react-parallax-bgimage{
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.dateyvidh > img{
+    width: 20vw;
+    height: auto;
+    max-width: fit-content;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .navbarouter{
+        height: 4vw;
+        padding: 0px    ;
+    }
+}
+@media only screen and (min-width: 799px) {
+    .navbarouter{
+        height: 5vw;
+        padding: 0px    ;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .img1,.img2,.img3,.img4{
+        height: 6vh;
+        background-color: transparent;
+    }
+      
+  }
+  @media only screen and (max-width: 800px) {
+    .img1,.img2,.img3,.img4{
+        height: 6vh;
+        background-color: transparent;
+    }
+    .dateyvidh > img{
+        width: 50vw;
+        height: auto;
+        max-width: fit-content;
+    
+    }
+    .navbar-brands{
+        width: 40%;
+    }
+  }
+  @media only screen and (max-width: 430px) {
+    .img1,.img2,.img3,.img4{
+        height: 6vh;
+        background-color: transparent;
+    }
+    .navbar-brands{
+        width: 40%;
+       
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .img1,.img2,.img3,.img4{
+        height: 6vh;
+        width: 25vw;
+        background-color: transparent;
+    }
+  }
+  

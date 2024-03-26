@@ -1,0 +1,82 @@
+
+
+.TechnicalMainContainer{
+    width: 100%;
+    height: 100%;
+}
+.awssld.awssld--organic-arrows {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.awssld__wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 70%;
+    width: 70%;
+}
+
+
+.awssld__box {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.awssld__content {
+    background-color: #ed7979;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AwesomeSlidercontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.AwesomeSlidercontainer>img {
+        max-width: 50vh;
+        width: 80%;
+        height: auto;
+}
+.awssld__bullets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+}
+.awssld__container {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 520px)
+{.awssld__controls {
+    visibility: visible;
+}}
+@media only screen and (max-width: 500px)
+{
+    .awssld__container {
+        padding-bottom: none;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .AwesomeSlidercontainer{
+        flex-direction: row;
+    }
+    .AwesomeSlidercontainer>div{
+        margin-left: 0.8vw;
+    }
+}

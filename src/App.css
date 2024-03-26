@@ -1,0 +1,93 @@
+.App {
+  width: 100vw;
+  position: relative;
+  z-index: -4;
+}
+.mainentrycontainer{
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.Sections{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  z-index: -3;
+  background-color: black;
+}
+.Sections.department{
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(24, 14, 14);
+}
+.featureeventSec{
+  width: 100%;
+  height: 40vh;
+  max-height: 100vh;
+  background-color: black;
+}
+.intersection{
+  width: 100vw;
+  height: auto;
+}
+.intersection>img{
+  width: 100%;
+}
+
+
+#contacts{
+  background-color: blue;
+}
+#credits{
+  background-color: aqua;
+}
+.featureeventSec{
+  height: 70vw;
+}
+
+
+
+@supports (-webkit-touch-callout: none) {
+  .namey2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .namey2 > img{
+    width: 100%;
+    display: block;
+  }
+  .namey .nameinner{
+    display: none;
+  }
+  .aboutyvidhinner > .yvidhimg{
+    display: none;
+  }
+  .aboutyvidh > .aboutmainposter{
+    display: block;
+    width: 90%;
+    height: 100%;
+    background-image: url(./brochure.webp);
+    background-size: contain; 
+    background-repeat: no-repeat;
+  }
+}
+.specialcont{
+  margin-top: 3vw;
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .namey2 > img{
+    
+    display: none;
+  }
+  .aboutmainposter{
+    display: none;
+  }
+  
+}

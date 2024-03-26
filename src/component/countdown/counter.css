@@ -1,0 +1,39 @@
+
+
+
+.cd_timer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.cd_container{
+
+    max-width: fit-content;
+}
+
+.cd_container .time {
+    font-weight: bold;
+    padding: 0.5vw 2.5vw;
+    font-size: 5vw;
+    border: 4px solid #dadf01;
+    border-radius: 1rem;
+    margin: 0 0.7vw;
+}
+
+.cd_container span {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #ccc;
+}
+
+@media only screen and (max-width: 600px){
+  .cd_container .time{
+    font-size: 7vw;
+  }
+  .cd_container span{
+    font-size: 3vw
+    
+    
+    ;
+  }
+}

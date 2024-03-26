@@ -1,0 +1,100 @@
+.contactmaincontainer{
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(51,20,17);
+background: linear-gradient(180deg, rgba(51,20,17,1) 9%, rgba(64,10,10,1) 23%, rgba(73,55,37,1) 84%);
+}
+.contactflexcontainer{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contactflex{
+  min-width: 25vw;
+  margin: 1vw;
+}
+.card {
+    border-radius: 25px;
+    position: relative;
+    padding: 19px 15px;
+    padding-bottom: 0;
+    background-color: #070e0e;
+    height: fit-content;
+    box-shadow: 0 0px 5px #d8a312;
+    text-align: left;
+  }
+  
+  .top {
+    border-radius: 25px 25px 0 0;
+    min-height: 40%;
+    max-height: 50%;
+    width: 100%;
+    background-color: #ce9600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  
+  .name {
+    font-size: 2em;
+    color: #2d3436;
+    display: flex;
+    font-weight: bold;
+    flex: 1;
+    margin: 1vh;
+  }
+  .info.position{
+    margin-top: 1.5vw;
+  }
+  .card img {
+    margin: 30px 20px 0 0;
+  }
+  
+  .circle-img {
+    border-radius: 80%;
+    border: 7px solid #fff;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .bottom-info {
+    margin-top: 120px;
+  }
+  .bottom {
+    margin-top: 8vh;
+  }
+  
+  .info {
+    margin: 1vh;
+    color: white;
+  }
+  .contactheading{
+    color: white;
+  }
+  
+
+  @media only screen and (max-width: 660px){
+    .contactheading{
+      margin-top: 22vw;
+    }
+    .info.position {
+      margin-top: 2vw;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .contactflex {
+      width: 100%;
+      margin: 3vw;
+    }
+}
